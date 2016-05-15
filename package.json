@@ -1,12 +1,13 @@
 {
   "name": "insult",
   "version": "0.2.5",
-  "description": "An application that insults you",
+  "description": "a fake store",
   "engines": {
     "node": "5.9.1"
   },
   "scripts": {
-    "build": "browserify front-end/js/main.js -o public/js/main.js -t [ babelify --presets [ es2015 ] ]"
+    "build": "browserify front-end/js/main.js -o public/js/main.js -t [ babelify --presets [ es2015 ] ]",
+    "lint": "eslint *.js front-end/js/*.js"
   },
   "main": "index.js",
   "dependencies": {

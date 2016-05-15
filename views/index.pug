@@ -1,8 +1,12 @@
-html  
+html(ng-app='store')
     head
-        title crm
-        link(rel="stylesheet", type="text/css", href="public/styles/main.css")
+        title Gem Store
+        link(rel='stylesheet', type='text/css', href='public/styles/main.css')
+        script(src='/public/js/main.js')
     body
-        h1 crm
-    script(src="/public/js/main.js")
+        div(ng-controller='StoreController as store')
+            h1 {{store.product.name}}
+            h2 {{store.product.price}}
+            p {{store.product.description}}
+            button(ng-show='store.product.can_purchase') Add To Cart
 

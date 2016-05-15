@@ -3,10 +3,21 @@
 'use strict';
 
 var angular = require('angular');
-global.jQuery = require("jquery");
-var bootstrap = require('bootstrap');
+global.jQuery = require('jquery'); //to satisfy bootstrap
+var bootstrap = require('bootstrap'); // eslint-disable-line no-unused-vars
 
 var app = angular.module('store', []);
+
+app.controller('StoreController', function () {
+    this.product = gem;
+    console.log(this.product);
+});
+
+var gem = {
+    name: 'Dodecahedron',
+    price: 2.95,
+    description: '...'
+};
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"angular":3,"bootstrap":4,"jquery":17}],2:[function(require,module,exports){
