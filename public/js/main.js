@@ -10,13 +10,13 @@ var app = angular.module('store', []);
 
 app.controller('StoreController', function () {
     this.product = gem;
-    console.log(this.product);
 });
 
 var gem = {
     name: 'Dodecahedron',
     price: 2.95,
-    description: '...'
+    description: '...',
+    can_purchase: true
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
