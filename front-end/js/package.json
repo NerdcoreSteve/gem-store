@@ -1,0 +1,20 @@
+{
+  "name": "front-end-js",
+  "version": "1.0.0",
+  "description": "front end js",
+  "main": "main.js",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "ramda": "^0.21.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Steve Smith"
+}
