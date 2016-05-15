@@ -1,3 +1,5 @@
-var R = require('ramda')
+var angular = require('angular')
+global.jQuery = require("jquery") //to satisfy bootstrap
+var bootstrap = require('bootstrap')
 
-console.log(R.map((x) => 3*x, [1,2,3,4,5]))
+var app = angular.module('store', [])
