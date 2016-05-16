@@ -8,5 +8,6 @@ html(ng-app='store')
             li(class='list-group-item', ng-repeat='product in store.products')
                 h3 {{product.name}}
                     em(class='pull-right') {{product.price | currency}}
+                img(ng-src="{{'public/images/' + product.images[0].full}}")
                 p {{product.description}}
                 button(ng-show='product.can_purchase') Add To Cart

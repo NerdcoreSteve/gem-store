@@ -7,8 +7,8 @@ gulp.task('default', () => {
 
     front_end_images
         .pipe(imageResize({ 
-            width: 300,
-            height: 300,
+            width: 200,
+            height: 200,
             crop: true,
             upscale: false
         }))

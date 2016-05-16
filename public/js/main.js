@@ -16,12 +16,23 @@ var gems = [{
     name: 'Dodecahedron',
     price: 2,
     description: '...',
-    can_purchase: true
+    can_purchase: true,
+    images: [{
+        full: 'Dodecahedron-full.jpg',
+        thumb: 'Dodecahedron-thumb.jpg'
+    }, {
+        full: 'dodecahedron-full.jpg',
+        thumb: 'dodecahedron-thumb.jpg'
+    }]
 }, {
     name: 'Pentagonal Gem',
     price: 5.95,
     description: '...',
-    can_purchase: false
+    can_purchase: false,
+    images: [{
+        full: 'Pentagonal_prism-full.png',
+        thumb: 'Pentagonal_prism-thumb.png'
+    }]
 }];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
