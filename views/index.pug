@@ -8,6 +8,28 @@ html(ng-app='store')
             li(class='list-group-item', ng-repeat='product in store.products')
                 h3 {{product.name}}
                     em(class='pull-right') {{product.price | currency}}
-                img(ng-src="{{'public/images/' + product.images[0].full}}")
-                p {{product.description}}
+                div(class='gallery')
+                    img(
+                        class='img img-circle img-thumbnail center-block',
+                        ng-src='{{"public/images/" + product.images[0].full}}')
+                    ul(class='clearfix')
+                        li(class="small-image pull-left thumbnail", ng-repeat="image in product.images")
+                            img(ng-src='{{"public/images/" + image.thumb}}')
+                section(ng-init='tab = 1', ng-controller='PanelController as panel')
+                    ul(class='nav nav-pills')
+                        li(ng-class='{active:tab === 1}')
+                            a(href='', ng-click='tab = 1') Description
+                        li(ng-class='{active:tab === 2}')
+                            a(href='', ng-click='tab = 2') Specifications
+                        li(ng-class='{active:tab === 3}')
+                            a(href='', ng-click='tab = 3') Reviews
+                    div(class='panel', ng-show='tab === 1')
+                        h4 Description
+                        p {{product.description}}
+                    div(class='panel', ng-show='tab === 2')
+                        h4 Specifications
+                        blockquote None Yet
+                    div(class='panel', ng-show='tab === 3')
+                        h4 Reviews
+                        blockquote None Yet
                 button(ng-show='product.can_purchase') Add To Cart

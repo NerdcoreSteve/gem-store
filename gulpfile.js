@@ -13,7 +13,7 @@ gulp.task('default', () => {
             upscale: false
         }))
         .pipe(rename(function (path) {
-            path.basename += "-full"
+            path.basename += '-full'
         }))
         .pipe(gulp.dest('public/images'))
 
@@ -25,7 +25,7 @@ gulp.task('default', () => {
             upscale: false
         }))
         .pipe(rename(function (path) {
-            path.basename += "-thumb"
+            path.basename += '-thumb'
         }))
         .pipe(gulp.dest('public/images'))
 })

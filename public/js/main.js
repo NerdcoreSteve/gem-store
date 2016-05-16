@@ -6,11 +6,9 @@ var angular = require('angular');
 global.jQuery = require('jquery'); //to satisfy bootstrap
 var bootstrap = require('bootstrap'); // eslint-disable-line no-unused-vars
 
-var app = angular.module('store', []);
-
-app.controller('StoreController', function () {
+angular.module('store', []).controller('StoreController', function () {
     this.products = gems;
-});
+}).controller('PanelController', function () {});
 
 var gems = [{
     name: 'Dodecahedron',
