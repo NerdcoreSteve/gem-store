@@ -8,7 +8,17 @@ var bootstrap = require('bootstrap'); // eslint-disable-line no-unused-vars
 
 angular.module('store', []).controller('StoreController', function () {
     this.products = gems;
-}).controller('PanelController', function () {});
+}).controller('PanelController', function () {
+    var _this = this;
+
+    this.tab = 1;
+    this.select_tab = function (set_tab) {
+        return _this.tab = set_tab;
+    };
+    this.is_selected = function (tab) {
+        return _this.tab === tab;
+    };
+});
 
 var gems = [{
     name: 'Dodecahedron',

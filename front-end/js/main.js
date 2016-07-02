@@ -8,6 +8,9 @@ angular
         this.products = gems
     })
     .controller('PanelController', function () {
+        this.tab = 1
+        this.select_tab = (set_tab) => this.tab = set_tab
+        this.is_selected = (tab) => this.tab === tab
     })
 
 var gems = [
