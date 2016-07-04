@@ -1,9 +1,13 @@
-var gulp = require('gulp')
-var imageResize = require('gulp-image-resize')
-var rename = require('gulp-rename')
+const
+    gulp = require('gulp'),
+    imageResize = require('gulp-image-resize'),
+    rename = require('gulp-rename'),
+    del = require('del')
  
-gulp.task('default', () => {
-    var front_end_images = gulp.src('front-end/images/*')
+gulp.task('resize-images', () => {
+    const front_end_images = gulp.src('front-end/images/*')
+
+    del(['public/images/*'])
 
     front_end_images
         .pipe(imageResize({ 
@@ -29,3 +33,5 @@ gulp.task('default', () => {
         }))
         .pipe(gulp.dest('public/images'))
 })
+
+gulp.task('default', ['resize-images'])

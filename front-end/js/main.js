@@ -17,7 +17,7 @@ var gems = [
     {
         name: 'Dodecahedron',
         price: 2,
-        description: '...',
+        description: 'A polyhedron with twelve flat faces',
         can_purchase: true,
         images: [
             {
@@ -25,8 +25,8 @@ var gems = [
                 thumb: 'Dodecahedron-thumb.jpg'
             },
             {
-                full: 'dodecahedron-full.jpg',
-                thumb: 'dodecahedron-thumb.jpg'
+                full: 'dodecahedron-full.png',
+                thumb: 'dodecahedron-thumb.png'
             }
         ]
     },
