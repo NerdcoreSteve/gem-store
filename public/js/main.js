@@ -5,6 +5,8 @@
 var angular = require('angular');
 global.jQuery = require('jquery'); //to satisfy bootstrap
 var bootstrap = require('bootstrap'); // eslint-disable-line no-unused-vars
+var stuff = 'things';
+console.log(stuff);
 
 angular.module('store', []).controller('StoreController', function () {
     this.products = gems;

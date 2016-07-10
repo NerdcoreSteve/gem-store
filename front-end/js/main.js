@@ -1,6 +1,8 @@
-var angular = require('angular')
+const angular = require('angular')
 global.jQuery = require('jquery') //to satisfy bootstrap
-var bootstrap = require('bootstrap') // eslint-disable-line no-unused-vars
+const bootstrap = require('bootstrap') // eslint-disable-line no-unused-vars
+const stuff = 'things'
+console.log(stuff)
 
 angular
     .module('store', [])
@@ -13,7 +15,7 @@ angular
         this.is_selected = (tab) => this.tab === tab
     })
 
-var gems = [
+const gems = [
     {
         name: 'Dodecahedron',
         price: 2,

@@ -6,8 +6,11 @@
     "node": "5.9.1"
   },
   "scripts": {
-    "build": "./build.sh",
-    "lint": "./lint.sh"
+    "build": "echo extract build.js",
+    "lint": "echo extract lint.js",
+    "test": "echo no testing yet",
+    "images": "gulp image-resize",
+    "watch": "node watch.js"
   },
   "main": "index.js",
   "dependencies": {
